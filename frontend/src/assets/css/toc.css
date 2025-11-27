@@ -1,0 +1,64 @@
+/* ====== 通用样式 ====== */
+
+/* 整个 TOC 容器 */
+.toc-list {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* 去掉 ul 默认缩进和圆点 */
+.toc-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* 每一条目录项 */
+.toc-item {
+  cursor: pointer;
+  padding: 2px 0;
+  color: #444;
+  transition: color 0.15s ease;
+  white-space: normal;         /* 允许换行 */
+  word-break: break-word;
+}
+
+.toc-item:hover {
+  color: #2563eb;              /* hover 时稍微蓝一点 */
+  text-decoration: underline;
+}
+
+/* ====== 各级标题的缩进规则 ====== */
+/* h1：不缩进，稍微强调 */
+.toc-level-1 {
+  padding-left: 0;
+  font-weight: 600;
+}
+
+/* h2：缩进一层 */
+.toc-level-2 {
+  padding-left: 12px;
+}
+
+/* h3：再缩一层 */
+.toc-level-3 {
+  padding-left: 24px;
+  font-size: 12.5px;
+}
+
+/* h4–h6：缩进更多，字号略小一点 */
+.toc-level-4 {
+  padding-left: 36px;
+  font-size: 12px;
+}
+
+.toc-level-5 {
+  padding-left: 48px;
+  font-size: 12px;
+}
+
+.toc-level-6 {
+  padding-left: 60px;
+  font-size: 12px;
+  opacity: 0.9;
+}
